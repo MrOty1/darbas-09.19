@@ -1,0 +1,139 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Verdana;
+    overflow-x: hidden;
+    text-align: center;
+    background: burlywood;
+    color: black;
+    white-space: nowrap;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: contents;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.ad{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    background: url(images/AD.png);
+    background-size: cover;
+}
+
+.navbar{
+    background: gray;
+    border-bottom: 0.2vw black solid;
+    overflow: hidden;
+    width: 100vw;
+    height: 2.4vh;
+    position: fixed;
+    top: 0;
+    animation: popin 1s;
+    transition: height 1s;
+    z-index: 10;
+}
+
+.line{
+    width: 75%;
+    height: 0.4vh;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar:hover{
+    height: 15vh;
+}
+
+.main{
+    margin-top: 5%;
+    padding-top: 5%;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: brown;
+}
+
+.foodselect{
+    padding: 5vh 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background: rgba(255, 255, 255, 0.3);
+    white-space: wrap;
+    width: 100%;
+}
+
+.item{
+    border-radius: 1vh;
+    width: 15vw;
+    height: 50vh;
+    background: rgb(255, 255, 255);
+    transition: padding 0.25s;
+}
+
+.item:hover{
+    padding: 1vh 1vh;
+}
+
+.img{
+    border-top-left-radius: 1vh;
+    border-top-left-radius: 1vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 0.5vh solid black;
+    width: 15vw;
+    height: 43vh;
+}
+
+.foodone{
+    background-image: url(images/receptai/one.jpg);
+}
+
+.foodtwo{
+    background-image: url(images/receptai/two.jpg);
+}
+
+.foodthree{
+    background-image: url(images/receptai/three.jpg);
+}
+
+.foodfour{
+    background-image: url(images/receptai/four.jpg);
+}
+
+.foodfive{
+    background-image: url(images/receptai/five.jpg);
+}
+
+footer{
+    background: gray;
+    border-top: 0.2vw black solid;
+    width: 100vw;
+    height: 2.4vh;
+    position: fixed;
+    bottom: 0;
+    animation: popin 1s;
+    transition: color 1s;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+@keyframes popin{
+    0%{
+        height: 0;
+        font-size: 0;
+    }
+    100%{
+        height: 2.4vh;
+    }
+}
